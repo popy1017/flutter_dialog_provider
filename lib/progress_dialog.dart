@@ -15,7 +15,7 @@ class ProgressDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            CircularProgressIndicator(),
+            CircularProgressIndicator(value: progress),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16),
               child: LinearProgressIndicator(value: progress),
